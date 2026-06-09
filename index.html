@@ -33,7 +33,22 @@
     <link rel="canonical" href="https://edusidegum.github.io/transformacao21/">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<!-- ═══════════ Script Conrole Musica ═══════════ -->
+<script>
+    /* ── Áudio de Fundo: inicia mudo e desmuta ao primeiro toque ── */
+    const bgMusic = document.getElementById('bg-music');
+    document.addEventListener('click', function unmuteOnce() {
+        if (bgMusic.muted) {
+            bgMusic.muted = false;
+            bgMusic.play().catch(() => {});
+        }
+        document.removeEventListener('click', unmuteOnce);
+    });
+</script>
+
 <body>
+
+    <!-- ═══════════ Insere Musica ═══════════ -->
 <audio autoplay loop muted id="bg-music">
     <source src="https://raw.githubusercontent.com/edusidegum/menu/main/music/alexgrohl-electronic-stylish-rock.mp3" type="audio/mpeg">
 </audio>
