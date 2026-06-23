@@ -1,6 +1,3 @@
 User-agent: *
-Allow: /transformacao21/
-Disallow: /transformacao21/assets/
-Disallow: /transformacao21/img/
-
+Allow: /
 Sitemap: https://edusidegum.github.io/transformacao21/sitemap.xml
